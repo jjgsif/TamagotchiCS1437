@@ -15,6 +15,9 @@ pet::pet(string given){
 int pet::getHappiness(){
     return happiness;
 }
+void pet::increaseHunger(int change){
+    hunger += change;
+}
 void pet::feed(string foodType, int amount){
     if(nature == foodMood.at(foodType)){
         hunger -= amount * 1.5;

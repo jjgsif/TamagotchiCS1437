@@ -9,8 +9,8 @@ class pet{
         int getHappiness(); 
         void feed(string foodType, int amount);
         void play(int type);
-    private:
-        string state;
+        void increaseHunger(int change);
+    protected:
         string name;
         string nature;
         int happiness;
