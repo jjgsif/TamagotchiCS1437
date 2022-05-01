@@ -1,15 +1,4 @@
-Number
-5
-Pets
 
-namePet
-nature
-happiness
-hunger
 
-namePet
-nature
-happiness
-hunger
 
 

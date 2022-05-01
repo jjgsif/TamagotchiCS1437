@@ -33,3 +33,17 @@ void pet::feed(string foodType, int amount){
     }
     
 }
+void pet::setNature(string in){
+    nature = in;
+}
+
+void pet::setHunger(int in){
+    hunger = in;
+}
+
+void pet::setHappiness(int in){
+    happiness = in;
+}
+void pet::setTired(int in){
+    tiredness = in;
+}
