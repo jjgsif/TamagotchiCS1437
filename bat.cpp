@@ -2,8 +2,8 @@
 
 using namespace std;
 
-bat::bat(string name){
-            pet(name);
+bat::bat(string inName){
+            name = inName;
             maxSpan = rand()%65 + 58;
             wingspan = 58;
         }

@@ -3,10 +3,10 @@
 #include <fstream>
 #include <string>
 #include <iostream>
-#include "pet.h"
-#include "bat.h"
-#include "snake.h"
-#include "butterfly.h"
+#include "pet.cpp"
+#include "bat.cpp"
+#include "snake.cpp"
+#include "butterfly.cpp"
 
 
 using namespace std;
@@ -30,8 +30,7 @@ int main(){
         ifstream file(fileName);
         int petNum;
         file >> petNum; 
-        pet** petArr =  new pet*[petNum];
-        string traits[5];
+        pet** petArr =  new pet*[petNum];     
         string line;
         string name;
         int placeholder;
@@ -49,6 +48,7 @@ int main(){
             }
         }
         cout << "Pets loaded" << endl;
+        exit(1);
     }else if (answer == 2){
         string fileName;
         cout<<"Enter new save name:" << endl;

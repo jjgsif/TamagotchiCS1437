@@ -4,7 +4,7 @@ using namespace std;
 
 class bat : public pet{
     public:
-        bat(string);
+        bat(string name);
         void takeFlight();       
     private:
         int wingspan;

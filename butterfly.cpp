@@ -1,7 +1,7 @@
 #include "butterfly.h"
 
 butterfly::butterfly(string given){
-    pet(given);
+    name = given;
     caterpillar = true;
     srand(time(0));
 }

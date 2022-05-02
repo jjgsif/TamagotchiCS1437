@@ -1,4 +1,4 @@
-#ifndef PET.H
+
 #include <string>
 #include <map>
 #include "pet.h"
@@ -34,18 +34,18 @@ void pet::feed(string foodType, int amount){
     
 }
 void pet::setNature(string in){
-    nature = in;
+    this->nature = in;
 }
 
 void pet::setHunger(int in){
-    hunger = in;
+    this->hunger = in;
 }
 
 void pet::setHappiness(int in){
-    happiness = in;
+    this->happiness = in;
 }
 void pet::setTired(int in){
-    tiredness = in;
+    this->tiredness = in;
 }
 void pet::play(){
     srand(time(0));
@@ -61,4 +61,3 @@ void pet::play(){
         cout << "Your pet might have overworked themselves a bit and needs a snack. (Hunger: " << hunger <<")" << endl;
     }
 }
-#endif

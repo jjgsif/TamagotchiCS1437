@@ -3,7 +3,7 @@
 using namespace std;
 
 snake::snake(string given){
-        pet(given);
+        name = given;
           toMolt = 29 + rand()%3;
 }
 void snake::moltSkin(){
