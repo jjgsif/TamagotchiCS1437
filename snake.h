@@ -7,6 +7,12 @@ class snake : public pet{
         snake(string given);
         void moltSkin();
         void eyecap();
+        void setStage(int i){
+            if (i == 1){
+                eyecapStuck = true;
+            }
+        }
+        
     private:
         int toMolt;
         bool eyecapStuck;

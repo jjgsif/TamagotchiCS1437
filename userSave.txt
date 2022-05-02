@@ -1,4 +1,5 @@
-
-
-
-
+4
+wel | snake | calm | 24 | 3 | 3 | 2
+butterfly | butterfly | angry | 25 | 3 | 3 | 2
+bat | bat | fun | 37 | 50 | 27 | 2
+L | butterfly |  | 0 | 0 | 0 | 1

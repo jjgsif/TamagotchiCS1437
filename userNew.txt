@@ -1,0 +1,3 @@
+2
+Lucky | bat | sassy | 20 | 10 | 0 | 0
+Chelsea | butterfly | sassy | 23 | 15 | 9 | 1 | 1

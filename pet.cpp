@@ -3,6 +3,7 @@
 #include <map>
 #include "pet.h"
 #include <iostream>
+#include <sstream>
 
 using namespace std;
 
@@ -11,6 +12,11 @@ pet::pet(){
 }
 pet::pet(string given){
     name = given;
+    dayCounter = 0;
+    happiness = 20;
+    hunger = 10;
+    nature = natureArr[rand()%5];
+
 }
 int pet::getHappiness(){
     return happiness;
@@ -31,25 +37,27 @@ void pet::feed(string foodType, int amount){
             hunger = 0;
         }
     }
-    
+    cout << "Hunger lowered to " << hunger << endl;
+    cout << name << " is also less tired. (Tiredness: " << tiredness <<")" << endl;
 }
 void pet::setNature(string in){
-    this->nature = in;
+    nature = in;
 }
 
 void pet::setHunger(int in){
-    this->hunger = in;
+    hunger = in;
 }
 
 void pet::setHappiness(int in){
-    this->happiness = in;
+    happiness = in;
 }
 void pet::setTired(int in){
-    this->tiredness = in;
+    tiredness = in;
 }
 void pet::play(){
     srand(time(0));
     hunger += (1 + rand()%5);
+    tiredness += (1+rand()%5);
     if(hunger > 50){
         hunger = 50;
     }
@@ -60,4 +68,9 @@ void pet::play(){
     } else if(hunger < 35){
         cout << "Your pet might have overworked themselves a bit and needs a snack. (Hunger: " << hunger <<")" << endl;
     }
+}
+string pet::info(){
+    stringstream ss;
+    ss << name << " | " << typeV << " | " + nature  << " | " << happiness << " | " << hunger << " | " << tiredness << " | " << dayCounter;
+    return ss.str();
 }
